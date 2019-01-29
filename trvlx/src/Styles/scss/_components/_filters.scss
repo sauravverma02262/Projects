@@ -1,0 +1,42 @@
+.flight-filters {
+  position: relative;
+  top: 20px;
+
+  .rangeslider-horizontal .rangeslider__fill {
+    background: $app-background-color;
+  }
+
+  h2 {
+    margin: 0;
+    background: $app-background-color;
+    color: $app-color;
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+
+  .filter-box-1 {
+    margin-top: 10px;
+    display: sticky;
+
+    .box {
+      display: flex;
+      flex-direction: column;
+      padding: 2px 20px 10px;
+
+
+      label {
+        margin-bottom: -10px;
+      }
+    }
+
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid gray;
+    width: 220px;
+
+    span {
+      font-size: 16px;
+    }
+  }
+}

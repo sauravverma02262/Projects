@@ -1,0 +1,96 @@
+.header {
+  display: contents;
+
+  header {
+    background: $app-background-color;
+
+    h2 {
+      @include text-setting("xl");
+
+      a {
+        color: $app-color;
+        font-size: 18px;
+      }
+
+
+      .logo-container {
+        text-decoration: none;
+        font-size: 20px;
+        padding-left: 20px;
+
+        span {
+          position: relative;
+          left: 29px;
+          top: 3px;
+          color: gray;
+        }
+
+        .logo {
+          width: 60px;
+          height: 52px;
+          display: inline-block;
+          position: relative;
+          bottom: 0px;
+          left: -65px;
+          z-index: -2;
+          transform: rotateX(360deg);
+
+          img {
+            width: 100%;
+            height: 100%;
+            transform: rotateY(180deg);
+            z-index: -1;
+          }
+        }
+      }
+    }
+
+    ul.top-menu {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+
+      li {
+        margin: 0 5px;
+        line-height: 55px;
+
+        a,
+        span {
+          text-decoration: none;
+          color: $app-color;
+          font-size: 16px;
+          cursor: pointer;
+
+          &:hover {
+            color: lime;
+          }
+
+          span {
+            vertical-align: middle;
+
+            &.material-icons {
+              font-size: 16px;
+            }
+          }
+        }
+
+        .user-menu {
+          width: 70px;
+          height: 60px;
+
+          .user-info {
+            width: 100%;
+            height: 100%;
+
+            img {
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

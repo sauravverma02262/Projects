@@ -1,0 +1,139 @@
+.home {
+  .image-slider {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100vh;
+    }
+  }
+
+  .short-menu {
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: $font-play;
+
+    div {
+      transition: all .3s ease-in-out;
+
+      a {
+        color: orange;
+        text-decoration: none;
+        font-weight: 600;
+        text-shadow: 1px 1px 1px black;
+        font-size: 1.5em;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+          color: greenyellow;
+        }
+      }
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 60px 15px;
+    background: #0000009e;
+
+    .sub-cap {
+      color: #b5adad;
+      margin-bottom: 44px;
+    }
+
+    .tag-line {
+      color: white;
+      font-size: 30px;
+    }
+
+    .reasons {
+      display: flex;
+      justify-content: space-around;
+
+      &>div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background: #0bdada5e;
+        box-shadow: 0 0 15px black;
+        padding: 30px;
+        color: white;
+
+        h3 {
+          font-size: 26px;
+          font-weight: 600;
+          color: white;
+          padding: 10px 2px;
+          border-bottom: 2px solid #1e6b9c91
+        }
+
+        small {
+          font-size: 16px;
+        }
+      }
+
+      .r-1 {
+        text-align: center;
+      }
+    }
+
+
+
+  }
+
+  @media only screen and (max-width: 600px) {
+    .short-menu {
+      font-size: 100%;
+    }
+
+    .about-us {
+
+      text-align: center;
+
+      .sub-cap {
+        font-size: 12px;
+        text-align: center;
+      }
+
+      .tag-line {
+        font-size: 28px
+      }
+
+      .reasons {
+        flex-direction: column;
+
+        &>div {
+          h3 {
+            font-size: 28px
+          }
+
+          small {
+            font-size: 14px;
+            text-align: center;
+          }
+        }
+
+      }
+
+    }
+  }
+}

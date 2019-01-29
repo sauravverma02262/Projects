@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/********************************************************
+                      COLORS config  
+********************************************************/
+$app-background-color: #0b3c5b;
+$app-color: #ffffff;
+$transparent: transparent;
+$banner-shade: rgba(114, 141, 184, 0.44);
+$dark-purple: #232135;
+$light-blue: #92ffff;
+/********************************************************
+                      Fonts  
+********************************************************/
+$font-work:'Work Sans',
+sans-serif;
+$font-righteous:Righteous,
+cursive;
+$font-istokweb:'Istok Web',
+sans-serif;
+$font-monda:'Monda',
+sans-serif;
+$font-amaranth:'Amaranth',
+sans-serif;
+$font-chewy:'Chewy',
+cursive;
+$font-handlee:'Handlee',
+cursive;
+$font-grandhotel:'Grand Hotel',
+cursive;
+$font-play:'Play',
+sans-serif;
+
+/********************************************************
+                      App config  
+********************************************************/
+$zindex-dropdown: 1000 !default;
+$zindex-sticky: 1020 !default;
+$zindex-fixed: 1030 !default;
+$zindex-modal-backdrop: 1040 !default;
+$zindex-modal: 1050 !default;
+$zindex-popover: 1060 !default;
+$zindex-tooltip: 1070 !default;
+$header-height: 80px;
+$header-background: $app-background-color;
+$app-font: $font-monda;
+$header-color: $app-color;
+$header-font: $font-amaranth;
+$header-border-bottom: red;
+
+/****************************************************
+                        Grid
+*****************************************************/
+$grids: img dep dur arr pri details-holder details-holder-1 onward return total checkout ticket-details payments;
+
+@each $grid in $grids {
+  .#{$grid} {
+    grid-area: #{$grid};
+  }
+}
+
+/****************************************************
+                        Font Sizes
+*****************************************************/
+$base-font-size: 1rem;
+$base-line-height: 1.25 * $base-font-size;
+
+$text-settings: ('xs': (font-size: .75rem, // 12px
+line-height: $base-line-height),
+'sm': (font-size: .875rem, // 14px
+line-height: $base-line-height),
+'base': (font-size: 1rem, // 16px
+line-height: $base-line-height),
+'md': (font-size: 1.125rem, // 18px
+line-height: $base-line-height * 2),
+'lg': (font-size: 1.25rem, // 20px
+line-height: $base-line-height * 2),
+'xl': (font-size: 1.5rem, // 24px
+line-height: $base-line-height * 2));
+
+body {
+  font-family: $font-play;
+}

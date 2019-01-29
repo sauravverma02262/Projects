@@ -1,0 +1,9 @@
+{
+  "extends": ["react-app", "plugin:prettier/recommended", "eslint:recommended", "plugin:react/recommended"],
+  "rules": {
+    "react/self-closing-comp": ["error", {
+      "component": true,
+      "html": true
+    }]
+  }
+}

@@ -1,0 +1,152 @@
+.flight-booking {
+  padding: 20px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+
+  .flights-contents {
+    display: flex;
+    padding: 20px 0;
+    margin: 10px 0;
+    justify-content: space-between;
+  }
+
+  .flight-filters {
+    flex-grow: 1;
+
+  }
+
+  .payment-summary {
+    flex-grow: 1
+  }
+
+  .flight-details {
+    flex-grow: 6;
+    // border: 1px solid gray;
+
+
+    .flight-card,
+    .header-flight {
+      margin: 20px 10px;
+      box-shadow: 0 0 8px gray;
+      border-radius: 0;
+      border: 1px solid gray;
+
+      font-size: 1.8rem;
+      transition: all .3s ease-in-out;
+    }
+
+    .flight-card {
+      padding: 20px;
+
+      &:hover {
+        transform: scale(1.02);
+        background: skyblue;
+
+      }
+    }
+  }
+
+  .details {
+    display: flex;
+    justify-content: space-between;
+
+
+    .img,
+    .book {
+      flex-grow: 1;
+    }
+
+    .book {
+      button {
+        background: #03A9F4;
+        font-size: 18px;
+        box-shadow: 0px 3px 10px black;
+        text-transform: none;
+        padding: 10px 20px;
+
+        &:hover {
+          box-shadow: 0px 0px 2px black;
+        }
+      }
+    }
+
+    .dep,
+    .dur,
+    .arr,
+    .pri {
+      flex-grow: 2;
+
+      &.ce {
+        &:before {
+          content: 'Rs. ';
+          font-size: 20px;
+        }
+
+        font-size: 32px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.flight-search {
+  padding: 20px;
+  min-width: 360px;
+
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  background: white;
+
+  .flight-type,
+  .search-form {
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .serach-button {
+    width: 160px;
+    font-size: 16px;
+    background: $app-background-color;
+    color: $app-color;
+    padding: 14px;
+    margin-top: 18px;
+    margin-left: 10px;
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    .search-form {
+      display: flex;
+      flex-direction: column;
+
+    }
+  }
+
+  .search-form {
+    justify-content: safe;
+
+    .from-control {
+      margin: 0 6px;
+    }
+
+    label {
+      font-size: 14px;
+    }
+
+    input,
+    select {
+      width: 220px;
+      font-size: 16px;
+
+    }
+
+    .swap {
+      padding: 30px 0 0;
+    }
+  }
+}

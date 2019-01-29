@@ -1,0 +1,7 @@
+.checkout {
+  padding-top: $header-height;
+  display: grid;
+  grid-template-columns: 1fr 50% 30% 1fr;
+  grid-template-areas: ". ticket-details payments .";
+  margin: 20px auto;
+}

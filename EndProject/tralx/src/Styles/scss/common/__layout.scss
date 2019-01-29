@@ -1,0 +1,30 @@
+body {
+  background: white;
+  margin: 0;
+  padding: 0;
+}
+
+.cell-img img {
+  width: 100px;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.app-footer {
+  display: grid;
+  height: 400px;
+  border-radius: 0 !important;
+
+  .app-container {
+    background: $app-background-color;
+    border-radius: 0 !important;
+  }
+}

@@ -1,0 +1,29 @@
+.flight-bar {
+  padding: 0px 40px 30px;
+  margin-top: 30px;
+  display: flex;
+  background: white;
+  justify-content: space-evenly;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+
+  div {
+    margin: 0 5px;
+    color: black;
+
+    .form-field {
+      width: 200px;
+    }
+  }
+}
+
+.x {
+  z-index: 10000;
+  background: #2bc0e23b;
+  color: #222;
+  height: 100px;
+  font-family: "Amaranth", sans-serif;
+  position: fixed;
+  display: flex;
+  box-shadow: 0 1px 1px #47b3dc4a;
+  width: 100%;
+}

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Amaranth:400,700|Chewy|Grand+Hotel|Handlee|Istok+Web:400,700|Monda:400,700|Play:400,700|Righteous|Work+Sans:500,700');
+@import 'common/__constants';
+@import 'common/__layout';
+@import 'common/__themeCreator';
+@import 'Component/__Header';
+@import 'Component/__flightBar';
+@import 'Component/__Login';
+@import './Component/_home';
+@import './Component/_flightDetails';
+@import './Component/_checkout';
+/*
+    App Features
+*/
+@include theme(theme-1,
+#fff,
+#222,
+#222,
+rgba(255, 255, 255, .6),
+#fff);
